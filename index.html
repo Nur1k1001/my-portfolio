@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Рустам Нурхан | Портфолио</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+.bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.5;
+}
+
+.c1{
+    width:350px;
+    height:350px;
+    background:#white;
+    top:-100px;
+    left:-100px;
+}
+
+.c2{
+    width:400px;
+    height:400px;
+    background:#white;
+    bottom:-150px;
+    right:-100px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+    min-height:100vh;
+    flex-wrap:wrap;
+}
+
+.profile{
+    position:relative;
+}
+
+.profile::before{
+    content:"";
+    position:absolute;
+    inset:-10px;
+    background:linear-gradient(45deg,#06b6d4,#7c3aed);
+    border-radius:50%;
+    z-index:-1;
+    filter:blur(20px);
+}
+
+.profile img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid rgba(255,255,255,.15);
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.info{
+    max-width:550px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:70px;
+    line-height:1;
+    margin-bottom:15px;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#06b6d4,#8b5cf6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+p{
+    color:#d1d5db;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btns{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 30px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary{
+    background:linear-gradient(45deg,#06b6d4,#7c3aed);
+    color:white;
+}
+
+.secondary{
+    border:1px solid rgba(255,255,255,.2);
+    color:white;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.section{
+    margin-top:100px;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:25px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#67e8f9;
+}
+
+.contact{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contact a{
+    color:#67e8f9;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    h1{
+        font-size:50px;
+    }
+
+    .profile img{
+        width:250px;
+        height:250px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+</div>
+
+<div class="container">
+
+    <section class="hero">
+
+        <div class="profile">
+            <img src="c:\Users\User\Downloads\image practic.jpeg""" alt="Нурхан">
+        </div>
+
+        <div class="info">
+            <span class="badge">👋 Добро пожаловать</span>
+
+            <h1>Я <span class="gradient">Рустам Нурхан</span></h1>
+
+            <p>
+                Начинающий веб-разработчик и дизайнер.
+                Создаю современные, красивые и удобные сайты.
+                Люблю технологии, креативный дизайн и развитие в IT.
+
+                На данный момент мне 16 лет,учусь в AITU College.
+                Мое хобби это заниматься чем-то чтобы не было скучно.
+
+            </p>
+
+            <div class="btns">
+                <a href="#about" class="btn primary">Обо мне</a>
+                <a href="#contact" class="btn secondary">Контакты</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="title">Обо мне</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>💻 Веб-разработка</h3>
+                <p>Создание адаптивных сайтов на HTML, CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Дизайн</h3>
+                <p>Современные интерфейсы.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Развитие</h3>
+                <p>Постоянно изучаю новые технологии и улучшаю навыки.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="title">Навыки</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Изучаю на данный момент</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Изучаю на данный момент</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Еще не начал изучать</p>
+            </div>
+
+            <div class="card">
+                <h3>UI/UX</h3>
+                <p>Еще не начал изучать</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <h2 class="title">Контакты: 8 778 047 95 58</h2>
+
+        <p>
+            Email: village4059@gmail.com <br>
+            Telegram: @Nur1k1001
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    © 2025 Нурхан | Портфолио
+</footer>
+
+</body>
+</html>
